@@ -1,0 +1,92 @@
+[
+  {
+    "case": "c000",
+    "band": "b1",
+    "iso_value": -0.005,
+    "target_reduction": 0.95,
+    "points": 21496,
+    "cells": 42221,
+    "file": "web/meshes/c000_b1.ply",
+    "file_size_bytes": 1065088
+  },
+  {
+    "case": "c000",
+    "band": "b3",
+    "iso_value": -0.1,
+    "target_reduction": 0.93,
+    "points": 70744,
+    "cells": 140271,
+    "file": "web/meshes/c000_b3.ply",
+    "file_size_bytes": 3521691
+  },
+  {
+    "case": "c000",
+    "band": "b5",
+    "iso_value": -1.0,
+    "target_reduction": 0.9,
+    "points": 163763,
+    "cells": 325082,
+    "file": "web/meshes/c000_b5.ply",
+    "file_size_bytes": 8156691
+  },
+  {
+    "case": "c025",
+    "band": "b1",
+    "iso_value": -0.005,
+    "target_reduction": 0.95,
+    "points": 20393,
+    "cells": 39938,
+    "file": "web/meshes/c025_b1.ply",
+    "file_size_bytes": 1008937
+  },
+  {
+    "case": "c025",
+    "band": "b3",
+    "iso_value": -0.1,
+    "target_reduction": 0.93,
+    "points": 74945,
+    "cells": 148741,
+    "file": "web/meshes/c025_b3.ply",
+    "file_size_bytes": 3732625
+  },
+  {
+    "case": "c025",
+    "band": "b5",
+    "iso_value": -1.0,
+    "target_reduction": 0.9,
+    "points": 173348,
+    "cells": 344462,
+    "file": "web/meshes/c025_b5.ply",
+    "file_size_bytes": 8638671
+  },
+  {
+    "case": "c050",
+    "band": "b1",
+    "iso_value": -0.005,
+    "target_reduction": 0.95,
+    "points": 21253,
+    "cells": 41513,
+    "file": "web/meshes/c050_b1.ply",
+    "file_size_bytes": 1050052
+  },
+  {
+    "case": "c050",
+    "band": "b3",
+    "iso_value": -0.1,
+    "target_reduction": 0.93,
+    "points": 67029,
+    "cells": 132783,
+    "file": "web/meshes/c050_b3.ply",
+    "file_size_bytes": 3335187
+  },
+  {
+    "case": "c050",
+    "band": "b5",
+    "iso_value": -1.0,
+    "target_reduction": 0.9,
+    "points": 179189,
+    "cells": 356353,
+    "file": "web/meshes/c050_b5.ply",
+    "file_size_bytes": 8933438
+  }
+]
