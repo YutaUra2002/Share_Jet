@@ -81,6 +81,26 @@ backdrop.addEventListener("click",closeMenu);
 document.querySelectorAll(".case-button").forEach(button=>button.addEventListener("click",async()=>{closeMenu();await loadCondition(button.dataset.case);}));
 resetButton.addEventListener("click",()=>{camera.position.copy(initialCameraPosition);controls.target.copy(domainCenter);controls.cursor.copy(domainCenter);controls.update();});
 window.addEventListener("resize",()=>{camera.aspect=window.innerWidth/window.innerHeight;camera.updateProjectionMatrix();renderer.setSize(window.innerWidth,window.innerHeight);});
-function animate(){controls.update();renderer.render(scene,camera);}renderer.setAnimationLoop(animate);
+const TARGET_FPS = 40;
+const FRAME_TIME = 1000 / TARGET_FPS;
+
+let lastRenderTime = 0;
+
+function animate(time) {
+
+  if (time - lastRenderTime >= FRAME_TIME) {
+
+    controls.update();
+
+    renderer.render(
+      scene,
+      camera
+    );
+
+    lastRenderTime = time;
+  }
+}
+
+renderer.setAnimationLoop(animate);
 async function main(){await loadBounds();await loadCondition("c000");}
 main().catch(error=>{console.error(error);loadingText.textContent="Initialization failed.";});
